@@ -1,0 +1,180 @@
+@mixin placeholder{
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+body{
+	font-size: 14px;
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+%tablecell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.mainWrapper{
+	margin: 0 auto;
+}
+/*header*/
+header{
+	height: 80px;
+	width: 100%;
+	padding: 10px 0;
+	display: table;
+	color: #333;
+	.ux-mainsub{
+		display: table;
+		width: 100%;
+	}
+	.logo,.right{
+		@extend %tablecell;
+	}
+	/*logo*/
+	.logo{
+		width: 100px;
+		height: 100px;
+		.personwrapper{
+			width: 100px;
+			height: 100px;
+			img{
+				border-radius: 50%;
+				width: 100%;
+				height: 100%;
+				border: 1px solid #ddd;
+			}
+		}
+	}
+	.right{
+		ul{
+			text-align: left;
+			li{
+				list-style: none;
+				display: block;
+				margin: 0 10px;
+				color:#00b8b6;
+				padding-bottom: 5px;
+				a{
+					color: #00b8b6;
+					text-decoration: none;
+					&:hover{
+						text-decoration:underline;
+					}
+				}
+			}
+		}
+	}
+	a{
+        text-decoration: underline;
+        color: #fff;
+        outline: none;
+        display: inline-block;
+        &:hover,&:focus{
+            color: #fff;
+            outline: none;
+        }
+    }
+	background: #fff;
+}
+/*Navigation*/
+nav{
+	padding: 10px;
+	max-height: 40px;
+	background: #00BCD4;
+	color: #fff;
+	.navbar{
+		margin: 0 auto;
+		
+	}
+	ul{
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		list-style: none;
+		font-size: 0;
+		li{
+			@extend %tablecell;
+			font-size: 14px;
+			vertical-align: top;
+			a{
+				display: inline-block;
+				color: #fff;
+				text-decoration: none;
+				margin: 0 10px 0 0;
+			}
+			@media(min-width:320px) and (max-width:480px){
+				width: 95%;
+				margin: 0 auto;
+				a{
+					margin: 0 1px;
+				}
+			}
+		}
+	}
+}
+/*mainconten*/
+.mainContainer{
+	margin: 0 auto;
+	padding: 10px 0;
+	background: rgba(139, 203, 202, 0.01);
+	height:auto;
+	overflow: hidden;
+}
+/*main subwrapper*/
+.ux-mainsub{
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0;
+	@media(min-width:320px) and (max-width:768px){
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+.sectionrow{
+	width: 100%;
+	h1{
+		color:#000;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 10px 0px;
+		
+	}
+	.subSection{
+		.row{
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+/*footer*/
+footer{
+	width: 100%;
+	background:#00b8b6;
+	padding: 10px 0;
+	color: #fff;
+	height: 36px;
+	section{
+		width:100%;
+		padding: 0 10px;
+		margin: 0 auto;
+		.ux-mainsub{
+			text-align: center;
+		}
+		.copy{
+			display: block;
+			font-size: 12px;
+		}
+	}
+}

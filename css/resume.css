@@ -1,0 +1,177 @@
+body {
+  font-size: 14px;
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .logo, header .right, nav ul li {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mainWrapper {
+  margin: 0 auto;
+}
+
+/*header*/
+header {
+  height: 80px;
+  width: 100%;
+  padding: 10px 0;
+  display: table;
+  color: #333;
+  /*logo*/
+  background: #fff;
+}
+header .ux-mainsub {
+  display: table;
+  width: 100%;
+}
+header .logo {
+  width: 100px;
+  height: 100px;
+}
+header .logo .personwrapper {
+  width: 100px;
+  height: 100px;
+}
+header .logo .personwrapper img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+}
+header .right ul {
+  text-align: left;
+}
+header .right ul li {
+  list-style: none;
+  display: block;
+  margin: 0 10px;
+  color: #00b8b6;
+  padding-bottom: 5px;
+}
+header .right ul li a {
+  color: #00b8b6;
+  text-decoration: none;
+}
+header .right ul li a:hover {
+  text-decoration: underline;
+}
+header a {
+  text-decoration: underline;
+  color: #fff;
+  outline: none;
+  display: inline-block;
+}
+header a:hover, header a:focus {
+  color: #fff;
+  outline: none;
+}
+
+/*Navigation*/
+nav {
+  padding: 10px;
+  max-height: 40px;
+  background: #00BCD4;
+  color: #fff;
+}
+nav .navbar {
+  margin: 0 auto;
+}
+nav ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  list-style: none;
+  font-size: 0;
+}
+nav ul li {
+  font-size: 14px;
+  vertical-align: top;
+}
+nav ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  nav ul li {
+    width: 95%;
+    margin: 0 auto;
+  }
+  nav ul li a {
+    margin: 0 1px;
+  }
+}
+
+/*mainconten*/
+.mainContainer {
+  margin: 0 auto;
+  padding: 10px 0;
+  background: rgba(139, 203, 202, 0.01);
+  height: auto;
+  overflow: hidden;
+}
+
+/*main subwrapper*/
+.ux-mainsub {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .ux-mainsub {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.sectionrow {
+  width: 100%;
+}
+.sectionrow h1 {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+.sectionrow .subSection .row {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  background: #00b8b6;
+  padding: 10px 0;
+  color: #fff;
+  height: 36px;
+}
+footer section {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+footer section .ux-mainsub {
+  text-align: center;
+}
+footer section .copy {
+  display: block;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=resume.css.map */

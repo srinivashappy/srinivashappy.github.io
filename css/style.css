@@ -1,0 +1,485 @@
+body {
+  font-size: 14px;
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .logo, header .right, nav ul li {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mainWrapper {
+  margin: 0 auto;
+}
+
+/*header*/
+header {
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  display: table;
+  color: #333;
+  /*logo*/
+}
+header .ux-mainsub {
+  display: table;
+  width: 100%;
+}
+header .logo {
+  font-size: 24px;
+  padding: 10px 0 0 0;
+  color: #fa3501;
+}
+header .logo .ux, header .logo .ix, header .logo .exp {
+  font-family: roboto;
+  font-weight: 700;
+  text-shadow: 2px 2px 1px rgba(150, 150, 150, 0.49);
+  color: #00BCD4;
+}
+header .logo .ux {
+  margin-right: 4px;
+}
+header .logo .ix {
+  color: #fa3501;
+  font-size: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+header .logo .ix:before {
+  content: "";
+  display: inline-block;
+  border-left: 95px solid transparent;
+  border-right: 73px solid transparent;
+  border-bottom: 15px solid #fa3501;
+  position: absolute;
+  margin-top: -7px;
+  margin-left: -43px;
+}
+header .logo .exp {
+  margin-left: 4px;
+}
+header .right {
+  display: none;
+}
+header .right ul {
+  text-align: right;
+}
+header .right ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+header a {
+  text-decoration: underline;
+  color: #fff;
+  outline: none;
+  display: inline-block;
+}
+header a:hover, header a:focus {
+  color: #fff;
+  outline: none;
+}
+
+/*Navigation*/
+nav {
+  padding: 10px;
+  max-height: 40px;
+  background: #00BCD4;
+  color: #fff;
+}
+nav .navbar {
+  margin: 0 auto;
+}
+nav ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  list-style: none;
+  font-size: 0;
+}
+nav ul li {
+  font-size: 14px;
+  vertical-align: top;
+  white-space: nowrap;
+}
+nav ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  nav ul li {
+    width: 95%;
+    margin: 0 auto;
+  }
+  nav ul li a {
+    margin: 0 1px;
+  }
+}
+
+/*mainconten*/
+.mainContainer {
+  margin: 0 auto;
+  padding: 10px 0;
+  height: calc(100vh - 152px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: rgba(139, 203, 202, 0.01);
+}
+
+/*main subwrapper*/
+.ux-mainsub {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .ux-mainsub {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+/*home page*/
+.ux-home {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.ux-home artical {
+  width: 100%;
+  width: 33.33333%;
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px 20px 10px 0;
+  /*subwrapper*/
+  /*img holder*/
+}
+.ux-home artical:nth-last-child(1) {
+  padding-right: 0;
+}
+.ux-home artical .subwrapper {
+  margin: 10px 0;
+  border-radius: 4px / 5px 5px;
+  padding: 10px 0;
+}
+.ux-home artical h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #00b8b6;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.ux-home artical .ux-artical {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.ux-home artical .ux-imgholder {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+.ux-home artical .ux-imgholder img {
+  max-width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (min-width: 320px) and (max-width: 478px) {
+  .ux-home artical {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/*services*/
+.ux-contentrow {
+  margin-bottom: 20px;
+  color: #333;
+}
+.ux-contentrow h1 {
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-weight: 700;
+}
+.ux-contentrow h1::first-letter {
+  font-size: 36px;
+  color: #00b8b6;
+  padding-right: 1px;
+}
+.ux-contentrow h2 {
+  font-size: 14px;
+  color: #00b8b6;
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-weight: 600;
+}
+.ux-contentrow h2::first-letter {
+  font-size: 20px;
+  color: #000;
+  padding-right: 1px;
+}
+
+/*service list*/
+.ux-services {
+  margin: 0;
+  color: #333;
+}
+.ux-services h3 {
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-weight: 600;
+}
+.ux-services h3::first-letter {
+  font-size: 20px;
+  color: #00b8b6;
+  padding-right: 1px;
+}
+.ux-services ul {
+  list-style: none;
+  padding-left: 15px;
+}
+.ux-services ul li {
+  display: block;
+  padding: 4px 0;
+  list-style: decimal;
+  color: #004D40;
+}
+
+/*protfolio*/
+.ux-protfolio .subwrapper {
+  font-size: 0;
+}
+.ux-protfolio .subwrapper artical {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 245px;
+  height: 200px;
+  margin: 0 8px 10px 0;
+  font-size: 12px;
+}
+.ux-protfolio .subwrapper artical img {
+  border-radius: 4px;
+  border: 4px double #00b8b6;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.ux-protfolio .subwrapper artical .ux-wrkdecsription {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 10px;
+  right: 0;
+  left: 0;
+}
+.ux-protfolio .subwrapper artical:hover .ux-wrkdecsription {
+  display: inline-block;
+}
+@media (min-width: 320px) and (max-width: 550px) {
+  .ux-protfolio .subwrapper artical {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/*contact us*/
+.ux-contact a {
+  color: #00b8b6;
+  text-decoration: none;
+}
+.ux-contact a:hover {
+  text-decoration: underline;
+}
+
+.ux-enquirywrapper {
+  padding-top: 20px;
+}
+.ux-enquirywrapper form {
+  padding: 10px;
+  width: 100%;
+}
+.ux-enquirywrapper form fieldset {
+  padding: 10px;
+  border: 4px double #00b8b6;
+}
+.ux-enquirywrapper form fieldset legend {
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  color: #00b8b6;
+  padding: 0 10px;
+}
+.ux-enquirywrapper form fieldset .formrow {
+  padding-bottom: 30px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  /*buttons*/
+}
+.ux-enquirywrapper form fieldset .formrow label {
+  font-size: 12px;
+  display: block;
+  color: #00b8b6;
+  font-weight: 600;
+}
+.ux-enquirywrapper form fieldset .formrow input {
+  display: block;
+  margin-top: 10px;
+  border: none;
+  font-size: 14px;
+  border-bottom: 1px solid #999;
+  width: 100%;
+  background: transparent;
+}
+.ux-enquirywrapper form fieldset .formrow input ::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+.ux-enquirywrapper form fieldset .formrow input :-moz-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+.ux-enquirywrapper form fieldset .formrow input ::-moz-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+.ux-enquirywrapper form fieldset .formrow input :-ms-input-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+.ux-enquirywrapper form fieldset .formrow input:focus {
+  outline: none;
+}
+.ux-enquirywrapper form fieldset .formrow textarea {
+  display: block;
+  margin-top: 10px;
+  border: none;
+  font-size: 14px;
+  background: transparent;
+  border-bottom: 1px solid #999;
+  width: 100%;
+  font-family: arial;
+  resize: none;
+}
+.ux-enquirywrapper form fieldset .formrow textarea ::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+.ux-enquirywrapper form fieldset .formrow textarea :-moz-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+.ux-enquirywrapper form fieldset .formrow textarea ::-moz-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+.ux-enquirywrapper form fieldset .formrow textarea :-ms-input-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+.ux-enquirywrapper form fieldset .formrow textarea:focus {
+  outline: none;
+}
+.ux-enquirywrapper form fieldset .formrow .left, .ux-enquirywrapper form fieldset .formrow .right {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+}
+.ux-enquirywrapper form fieldset .formrow .left button, .ux-enquirywrapper form fieldset .formrow .right button {
+  width: 160px;
+  padding: 10px 4px;
+  text-align: center;
+  border: 1px solid #00b8b6;
+  background: #047B8A;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 2s all;
+  -webkit-transition: 2s all;
+}
+.ux-enquirywrapper form fieldset .formrow .left button:focus, .ux-enquirywrapper form fieldset .formrow .right button:focus {
+  outline: none;
+}
+.ux-enquirywrapper form fieldset .formrow .left button:hover, .ux-enquirywrapper form fieldset .formrow .right button:hover {
+  background: #00BCD4;
+}
+.ux-enquirywrapper form fieldset .formrow .left {
+  text-align: right;
+}
+.ux-enquirywrapper form fieldset .formrow .left button {
+  color: #fff;
+}
+.ux-enquirywrapper form fieldset .formrow .right {
+  padding-left: 20px;
+}
+.ux-enquirywrapper form fieldset .formrow .right button {
+  background: transparent;
+}
+@media (min-width: 320px) and (max-width: 640px) {
+  .ux-enquirywrapper form fieldset .formrow .left, .ux-enquirywrapper form fieldset .formrow .right {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 0;
+  }
+}
+.ux-enquirywrapper form fieldset .formrow .error {
+  font-size: 12px;
+  position: absolute;
+  color: red;
+  margin-top: 5px;
+  display: block;
+}
+
+.uxi_earn {
+  padding: 10px;
+  border-top: 1px solid #F44336;
+  border-bottom: 1px solid #F44336;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  background: #00b8b6;
+  padding: 10px 0;
+  color: #fff;
+  height: 36px;
+}
+footer section {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+footer section .ux-mainsub {
+  text-align: center;
+}
+footer section .copy {
+  display: block;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
